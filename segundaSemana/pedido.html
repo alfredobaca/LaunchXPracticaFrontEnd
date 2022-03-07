@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <style>
+       ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #00EBEE;
+        }
+
+        li {
+        float: left;
+        }
+
+        li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+        background-color: #111;
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+        body {
+        background-image:url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-atmospheric-pastry-promotion-poster-design-template-background-material-image_143544.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+  <div class="row">
+    <ul style="list-style-type: none">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="news.asp">Promociones</a></li>
+        <li><a href="pedido.html">Hacer un pedidos</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+    </ul>
+  </div>
+    <h1 style="text-align: center;"> Pedido</h1>
+    <hr>
+    <br>
+    <br>
+    <div class="row">
+      <div>
+        <form action="/accion.js" id="form1" method="post" align="center">
+        
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" form="form1"><br><br>
+         
+          <input type="text" id="apellido" name="apellido" form="form1" placeholder="Apellido"><br><br>
+  
+          <input type="text" id="correo" name="correo" form="form1" placeholder="Correo"><br><br>
+  
+          <input type="text" id="numero" name="numero" form="form1" placeholder="Telefono"><br><br>
+  
+          <textarea style="width: 50vh;" placeholder="Describe si quieres algun dibujo o texto dentro de tu pastel!!"></textarea>
+        </form>
+      </div>
+      <div style="text-align: center; padding-top: 20px;">
+        <input type="submit" value="Hacer pedido.">
+        <input type="reset">
+      </div>
+    </div>
+    
+        
+      
+
+</body>
+</html>
