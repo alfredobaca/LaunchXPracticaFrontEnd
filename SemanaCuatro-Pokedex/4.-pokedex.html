@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pokedex.css">
+
+</head>
+<body>
+<img src="./assets/Pokemon.png" alt="logo" width="25%" style="margin-left:600px;">
+<div class="pokedex">
+    <div class="poke-card">
+        <input type="text" placeholder="pikachu" id="pokeName" name="pokeName"
+               style="border-radius: 5px; text-align:center">
+        <div class="img-container">
+
+            <img src="./assets/pokebola.gif" alt="Pokemon" id="pokeImg" width="150px"
+                 style="border: 5px solid #adb5bd;"><br><br>
+            <label>Tipo:</label>
+            <p id="tipoP"></p>
+            <label>Movimiento:</label>
+            <p id="MovP"></p>
+            <label>Estadisticas:</label>
+            <p id="StatP"></p>
+
+        </div>
+        <br>
+        <button class="button" onclick="fetchPokemon()">Busca Pokemon</button>
+    </div>
+</div>
+</body>
+<footer>
+    <script src="4.-pokedex.js">
+    </script>
+</footer>
+</html>
